@@ -12,6 +12,7 @@ const Items = ({ todo, handleTodoComplete }: Props) => {
       className="list-items"
       onClick={() => handleTodoComplete(todo.id)}
       style={todo.completed ? { textDecoration: "line-through" } : {}}
+      data-testid="todo-item"
     >
       {todo.task}
     </li>

@@ -9,7 +9,7 @@ interface Props {
 
 const TodoList = ({ todos, handleTodoComplete }: Props) => {
   return (
-    <ul className="list">
+    <ul className="list" data-testid="todo-list">
       {todos.map((todo, i) => (
         <Items
           key={i}
